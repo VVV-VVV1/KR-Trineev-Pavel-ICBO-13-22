@@ -1,14 +1,16 @@
 h1 {
-  text-align: center;
+  margin-left: 30%;
 }
 
 .catalog {
   display: flex;
   justify-content: center;
+  flex-flow: row nowrap;
   margin-top: 20px;
 }
 
 .product {
+  display: block;
   text-align: center;
   margin: 0 20px;
 }
@@ -35,3 +37,13 @@ ul{
   align-items: center;
 }
 
+@media screen and (max-width: 400px){
+  .product img{
+    width: 150px;
+    height: 150px;
+  }
+
+  h1{
+    margin-left: 15%;
+  }
+}
