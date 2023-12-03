@@ -351,3 +351,11 @@ main h1{
     padding: 20px 20px 60px 20px;
   }
 }
+
+@media screen and (max-width: 400px){
+  .product img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
