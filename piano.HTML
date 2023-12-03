@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="piano\piano.CSS">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8"> <!--**подключение локализации-->
+    <meta name="author" content="Тринеев Павел"> <!--**имя автора-->
+    <meta name="description" content="Мир музыки"> <!--**описание сайта-->
+    <meta name="keywords" content="Мир музыки, Мир, мир, Музыка, музыка, Инструменты, Музыкальные инструменты, инструменты"> <!--**ключевые слова для робота-->
+    <title>Музыкальные инструменты, музыкальное оборудывание в сети магазинов Мир Музыки</title>
+    <link rel="icon" type="image/png" href="icon\icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                ymaps.ready(function(){
+                    var geolocation = ymaps.geolocation;
+                    $('#reg').html(geolocation.region);
+                });
+            });
+    </script>
+  </head>
+  <body>
+    <header>
+    <div class="flex_element">
+    <div class="header_element">
+
+
+      <div class="content" id="reg"></div>
+
+      <div class="img_icon"><a href="https://yandex.ru/maps/?ll=38.762979%2C55.018035&z=6.15"><img width="24" height="24" src="icon\shop_icon.png" /></a></div>
+      <div class="content"><a href="https://yandex.ru/maps/?ll=38.762979%2C55.018035&z=6.15"><p>Магазины</p></a></div>
+
+      <div class="img_icon"><a href="https://www.cdek.ru/ru/express-light/?utm_source=yandex&utm_medium=cpc&utm_campaign=Экспресс-лайт_МК&utm_content=k50id%7C0100000046191012744_46191012744%7Ccid%7C90942141%7Cgid%7C5250134100%7Caid%7C14980325708%7Cadp%7Cno%7Cpos%7Cpremium2%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7C%dop%&yclid=10380648361026912255"><img width="30" height="30" src="icon\delivery_icon.png" /></a></div>
+      <div class="content"><a href="https://www.cdek.ru/ru/express-light/?utm_source=yandex&utm_medium=cpc&utm_campaign=Экспресс-лайт_МК&utm_content=k50id%7C0100000046191012744_46191012744%7Ccid%7C90942141%7Cgid%7C5250134100%7Caid%7C14980325708%7Cadp%7Cno%7Cpos%7Cpremium2%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7C%dop%&yclid=10380648361026912255"><p>Доставка</p></a></div>
+
+
+    </div>
+    <div class="header_element">
+
+
+      <div class="img_icon"><a href="tel:+79777309112"><img width="24" height="24" src="icon\tel_icon.png" /></a></div>
+      <div class="content"><a href="tel:+79777309112"><p>+7 977 730 91 12</p></a></div>
+
+
+      <div class="img_icon"><a href="mailto:M.M4p@yandex.ru"><img width="24" height="24" src="icon\mail_icon.png" /></a></div>
+      <div class="content"><a href="mailto:M.M4p@yandex.ru"><p>Написать письмо</p></a></div>
+
+    </div>
+  </div>
+  </div>
+  </header>
+    <main>
+
+      <h1>Каталог товаров</h1>
+  
+  <div class="catalog">
+    <div class="product">
+      <img src="piano\piano pictures\CNT92253.jpg" alt="Kawai K15E M/ PEP">
+      <h3>Kawai K15E M/ PEP</h3>
+      <p>Акустическое пианино. Высота 110 см.</p>
+      <button onclick="addToCart('Kawai K15E M/ PEP - 600 000 &#8381')">Добавить в корзину</button>
+    </div>
+    
+    <div class="product">
+      <img src="piano\piano pictures\CNT61716.jpg" alt="Kawai K-300 M/ PEP OLD">
+      <h3>Kawai K-300 M/ PEP OLD</h3>
+      <p>Акустическое Пианино. Цельная еловая дека.</p>
+      <button onclick="addToCart('Kawai K-300 M/ PEP OLD - 930 000 &#8381')">Добавить в корзину</button>
+    </div>
+  </div>
+  
+  <div class="cart">
+    <h2>Корзина</h2>
+    <ul id="cartItems">
+      <!-- Пусто, так как товары в корзине будут добавляться динамически -->
+    </ul>
+    <button onclick="clearCart()">Очистить корзину</button>
+  </div>
+    <script src="script.JS"></script>
+      
+    </main>
+
+
+
+    <footer>
+      <div class="footer_block">
+
+        <div class="footer_block_1">
+        <h2>«Мир Музыки» - интернет-магазин музыкальных инструментов и музыкального оборудования</h2><br>
+        <p>Компания «Мир Музыки» - это сеть крупнейших в России магазинов музыкальных инструментов, световой техники, звукового, студийного и торгового
+           оборудования для музыкальных магазинов. Закажите музыкальные инструменты онлайн в интернет-магазине или свяжитесь с операторами: 
+           они профессионально, вежливо и оперативно помогут выбрать интересующий вас музыкальный товар.</p><br>
+        <p>Музыкальные магазины салоны «Мира Музыки» работают для вас в крупнейших городах России: Москве, Санкт-Петербурге, Волгограде, Екатеринбурге, Иркутске, 
+          Казани, Краснодаре, Красноярске, Нижнем Новгороде, Новосибирске, Ростове-на-Дону, Самаре, Уфе.</p>
+      </div>
+
+      <hr>
+
+      <div class="footer_block_2">
+        <p>&copy 1994-2023, ООО «Мир Музыки». Все права защищены. Сайт носит информационный характер и не является публичной офертой, определяемой Гражданским кодексом РФ. Для 
+          получения актуальной и подробной информации о наличии и стоимости товаров и услуг пожалуйста, обращайтесь к нашим менеджерам.</p>
+      </div>
+
+
+    </div>
+    </footer>
+
+  </body>
+</html>
