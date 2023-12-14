@@ -32,3 +32,4 @@ const registrationForm = document.getElementById('registrationForm');
         alert('Ваш браузер не поддерживает localStorage, регистрация невозможна.');
       }
     });
+    
